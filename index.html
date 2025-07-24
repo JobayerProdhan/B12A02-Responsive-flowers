@@ -31,19 +31,34 @@
 
     <!-- banner section  -->
     <div class="w-[80%] mx-auto">
-        <nav class="flex justify-between items-center bg-white p-4 ">
+
+       <nav class="flex justify-between items-center bg-white p-4">
+  
             <div>
-                 <img class="w-[100px]" src="assets/logo.png" alt="">
+                <img class="w-[100px] block" src="assets/logo.png" alt="">
             </div>
-            <div >
-                <ul class="flex justify-between  items-center gap-4  w-[300px]">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> cart($56)</a></li>
+
+            
+            <div>
+                <ul class="flex items-center gap-4">
+                <!-- These links are hidden on small, visible from md+ -->
+                <li class="hidden md:block"><a href="">Home</a></li>
+                <li class="hidden md:block"><a href="">Shop</a></li>
+                <li class="hidden md:block"><a href="">About us</a></li>
+
+                <!-- Cart is always visible -->
+                <li>
+                    <a href="" class="flex items-center gap-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart ($56)</span>
+                    </a>
+                </li>
                 </ul>
             </div>
         </nav>
+
+
+
     </div>
    
 </body>
